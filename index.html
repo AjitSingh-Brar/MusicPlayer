@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CDN link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Music 3.0</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo_section">
+        <div class="logo">
+          <i class="bx bxs-album"></i>
+          <div class="logo_name">Music 3.0</div>
+        </div>
+
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="#">
+            <i class="bx bx-search-alt"></i>
+            <input type="text" placeholder="Search..." />
+          </a>
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-home-alt"></i>
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-star"></i>
+            <span class="links_name">Trends</span>
+          </a>
+          <span class="tooltip">Trends</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-music"></i>
+            <span class="links_name">Library</span>
+          </a>
+          <span class="tooltip">Library</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-disc"></i>
+            <span class="links_name">Made for you</span>
+          </a>
+          <span class="tooltip">Made for you</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart-circle"></i>
+            <span class="links_name">Saved</span>
+          </a>
+          <span class="tooltip">Saved</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-select-multiple"></i>
+            <span class="links_name">Daily Mix</span>
+          </a>
+          <span class="tooltip">Daily Mix</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-playlist"></i>
+            <span class="links_name">Playlist</span>
+          </a>
+          <span class="tooltip">Playlist</span>
+        </li>
+      </ul>
+      <div class="profile_section">
+        <div class="profile">
+          <div class="profile_info">
+            <img src="/images/profilepic.PNG" alt="" />
+            <div class="name_work">
+              <div class="name">Ajit Singh</div>
+              <div class="work">Web Developer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="logout_option"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="home_section">
+
+      <div class="trending_background">
+        <div class="music_background">
+          <div class="music_artist">Artist: Alan Walker</div>
+          <div class="music_head">On Top of the World</div>
+
+          <div class="music_options">
+            <div class="play-btn">Play</div>
+            <div class="follow-btn">Follow</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="music_container play">
+        <div class="music_info">
+          <h4 id="title">Ukulele</h4>
+          <div class="progress_container">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <audio src="music//music-player_music_ukulele.mp3" id="audio"></audio>
+
+        <div class="img_container">
+          <img src="images/guitar.jpg" alt="music" id="cover" />
+        </div>
+
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="bx bx-fast-forward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="bx bx-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="bx bx-fast-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
